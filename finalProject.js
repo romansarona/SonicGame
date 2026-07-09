@@ -144,9 +144,9 @@ function draw() {
   if (hardGameBool == true) {
     hardGame();
     if(!finalBossMusic.isPlaying()){
-      finalBossMusic.setVolume(.2);
       finalBossMusic.play();
       finalBossMusic.jump(15);
+      finalBossMusic.setVolume(.2); 
     }
   }
 
@@ -590,19 +590,19 @@ function mediumGame() {
   image(sonic, sonicX, sonicY, 50, 50);
 
   if (keyIsDown(LEFT_ARROW)) {
-    sonicX -= 8;
+    sonicX -= 6;
   }
 
   if (keyIsDown(RIGHT_ARROW)) {
-    sonicX += 8;
+    sonicX += 6;
   }
 
   if (keyIsDown(UP_ARROW)) {
-    sonicY -= 8;
+    sonicY -= 6;
   }
 
   if (keyIsDown(DOWN_ARROW)) {
-    sonicY += 8;
+    sonicY += 6;
   }
 
   if (sonicX < 0) {
