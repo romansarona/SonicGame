@@ -9,7 +9,7 @@ let sonicrunning;
 let sonicdancing;
 let sonicThumbsUp;
 let eggDrone;
-let deathCount = 0;
+let deathCount = 0; 
 
 let sonicring;
 let victoryScreenMusic;
@@ -281,20 +281,7 @@ function keyPressed() {
     instructionBool = false;
   }
 
-  if (homeScreenBool) {
-    if (key === "o") {
-      easywinScreenBool = true;
-      homeScreenBool = false;
-    }
-    if(key === "n"){
-      mediumwinScreenBool = true;
-      homeScreenBool = false;
-    }
-    if(key === "k"){
-      hardwinScreenBool = true;
-      homeScreenBool = false;
-    }
-  }
+ 
 }
 
 /**
